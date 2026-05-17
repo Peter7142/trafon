@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Zap } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo-trafon.png";
 
 export const SiteFooter = () => {
   return (
     <footer className="bg-primary text-primary-foreground mt-20">
       <div className="container-page py-14 grid gap-10 md:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2 mb-3">
-            <Zap className="h-6 w-6 text-accent" />
-            <span className="font-display text-2xl font-bold">TRAFON</span>
+          <div className="bg-primary-foreground/95 rounded-lg p-3 inline-block mb-4">
+            <img src={logo} alt="TRAFON logo" className="h-10 w-auto" loading="lazy" width={200} height={40} />
           </div>
           <p className="text-sm text-primary-foreground/75 leading-relaxed">
             Trafostanice na kľúč. Projektovanie, montáž, revízie a údržba bez starostí pre vašu prevádzku.
