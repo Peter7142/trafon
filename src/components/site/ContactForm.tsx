@@ -31,7 +31,11 @@ export const ContactForm = () => {
     try {
       const { data: inserted, error } = await supabase
         .from("contact_submissions")
-        .insert(values)
+        .insert({
+          name: values.name,
+          contact: values.contact,
+          message: values.message,
+        })
         .select("id")
         .single();
       if (error) throw error;
