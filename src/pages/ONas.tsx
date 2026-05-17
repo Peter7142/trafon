@@ -102,7 +102,7 @@ const ahaMoments: AhaItem[] = [
     icon: Zap,
     title: "Kenotrón pred prvým zapnutím",
     text:
-      "Trafostanicu nezapneme bez kenotrónového merania VN strany. Toto je hranica medzi „funguje" a „je bezpečné". 99 % výpadkov má svoju príčinu odhalenú práve tu.",
+      'Trafostanicu nezapneme bez kenotrónového merania VN strany. Toto je hranica medzi „funguje" a „je bezpečné". 99 % výpadkov má svoju príčinu odhalenú práve tu.',
   },
   {
     icon: Clock,
