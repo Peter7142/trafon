@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SEO } from "@/components/site/SEO";
 import { CTASection } from "@/components/site/CTASection";
-import { ContactForm } from "@/components/site/ContactForm";
 import { ServiceDialog } from "@/components/site/ServiceDialog";
 import {
   ArrowRight,
@@ -18,6 +17,8 @@ import {
   Gauge,
   Building2,
   Sparkles,
+  Phone,
+  Mail,
 } from "lucide-react";
 import hero from "@/assets/hero-trafostanica.jpg";
 import revizie from "@/assets/services-revizie.jpg";
@@ -436,9 +437,36 @@ const Home = () => {
                 ))}
               </ul>
             </div>
-            <Card className="shadow-elegant border-border/60">
-              <CardContent className="p-6 md:p-8">
-                <ContactForm />
+            <Card className="shadow-elegant border-border/60 bg-gradient-trust text-primary-foreground">
+              <CardContent className="p-6 md:p-8 space-y-5">
+                <h3 className="font-display text-2xl font-bold">Kontaktujte nás priamo</h3>
+                <p className="text-primary-foreground/85">
+                  Bez formulárov, bez čakania. Zavolajte nám alebo napíšte email — ozveme sa obratom.
+                </p>
+                <a
+                  href="tel:+421944366444"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/15 transition-colors"
+                >
+                  <div className="h-12 w-12 rounded-xl bg-gradient-warm flex items-center justify-center shrink-0">
+                    <Phone className="h-6 w-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-primary-foreground/70">Telefón</div>
+                    <div className="text-xl font-bold">+421 944 366 444</div>
+                  </div>
+                </a>
+                <a
+                  href="mailto:info@fotonenergy.sk"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/15 transition-colors"
+                >
+                  <div className="h-12 w-12 rounded-xl bg-gradient-warm flex items-center justify-center shrink-0">
+                    <Mail className="h-6 w-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-primary-foreground/70">Email</div>
+                    <div className="text-xl font-bold">info@fotonenergy.sk</div>
+                  </div>
+                </a>
               </CardContent>
             </Card>
           </div>
