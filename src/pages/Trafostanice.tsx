@@ -3,6 +3,7 @@ import { CTASection } from "@/components/site/CTASection";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Zap, Shield, Wrench } from "lucide-react";
 import trafoNova from "@/assets/trafostanica-nova.jpg";
+import trafoKiosk from "@/assets/trafostanica-kiosk.jpg";
 
 const Trafostanice = () => {
   return (
@@ -94,6 +95,36 @@ const Trafostanice = () => {
       </section>
 
       <section className="py-20">
+        <div className="container-page grid lg:grid-cols-2 gap-12 items-center">
+          <div className="order-2 lg:order-1">
+            <span className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-4">
+              Kiosková trafostanica
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-5">
+              Kompaktné riešenie pre firmy a developerov
+            </h2>
+            <p className="text-lg text-muted-foreground mb-4">
+              Kiosková trafostanica je <strong>rýchle, bezpečné a estetické</strong> riešenie tam, kde
+              potrebujete spoľahlivé napájanie bez kompromisov. Pripravená z výroby, osadená na mieste,
+              pripojená a uvedená do prevádzky pod jednou strechou.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              Klientom ju osobne <strong>vysvetlíme, prevedieme funkciami a odovzdáme s revíziou</strong> —
+              aby ste presne vedeli, čo vlastníte a ako to funguje.
+            </p>
+          </div>
+          <img
+            src={trafoKiosk}
+            alt="Kiosková trafostanica so zákazníkmi a technikom TRAFON pri odovzdaní"
+            className="rounded-2xl shadow-elegant order-1 lg:order-2"
+            loading="lazy"
+            width={1536}
+            height={1024}
+          />
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-soft">
         <div className="container-page max-w-4xl">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-5">
             Stará trafostanica — dlhodobá prevádzka bez poruchy
