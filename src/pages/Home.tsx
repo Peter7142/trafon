@@ -19,6 +19,8 @@ import {
   Sparkles,
   Phone,
   Mail,
+  HeartPulse,
+  PlugZap,
 } from "lucide-react";
 import hero from "@/assets/hero-trafostanica.jpg";
 import revizie from "@/assets/services-revizie.jpg";
@@ -116,21 +118,24 @@ const Home = () => {
               Pre koho sme tu
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
-              Sme špecialisti, nie "video" elektrikári
+              Sme špecialisti na NN/VN rozvody nad 1000 V
             </h2>
             <p className="text-lg text-muted-foreground">
-              Globálne sme tu pre tých, ktorí <em>nechcú zbytočný stres</em> z vybavovania
-              toho, čomu nerozumejú — a chcú niekoho, kto vie ako to{" "}
-              <strong>funkčne spustiť do prevádzky</strong>.
+              Hovoríme rečou <strong>energetikov vo firmách</strong>, ktorí potrebujú niekoho,
+              kto zvládne komplexný úkon, modernizáciu či opravu na VN strane —{" "}
+              <em>bez stresu z papierov, predpisov a distribúcie</em>. Postaráme sa o všetko od
+              projektu cez montáž a skúšky až po spustenie a údržbu.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               { icon: Factory, t: "Priemyselné výroby", d: "Veľké haly, závody, automotive." },
+              { icon: Zap, t: "Energetika & distribúcia", d: "Trafostanice, rozvodne, prípojky VN." },
+              { icon: HeartPulse, t: "Zdravotníctvo", d: "Nemocnice, polikliniky — spoľahlivosť 24/7." },
               { icon: Building2, t: "Developerské projekty", d: "Nové komerčné a obytné areály." },
-              { icon: Wrench, t: "Existujúce výroby", d: "Modernizácia a údržba sústav." },
-              { icon: Zap, t: "Pripojenie do siete", d: "Distribúcia aj MDS bez zdržaní." },
+              { icon: Wrench, t: "Existujúce výroby", d: "Modernizácia a údržba VN sústav." },
+              { icon: PlugZap, t: "Pripojenie do siete", d: "Distribúcia aj MDS bez zdržaní." },
             ].map((c, i) => (
               <Card
                 key={c.t}
