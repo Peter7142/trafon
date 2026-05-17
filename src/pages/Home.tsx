@@ -19,6 +19,8 @@ import {
   Sparkles,
   Phone,
   Mail,
+  HeartPulse,
+  PlugZap,
 } from "lucide-react";
 import hero from "@/assets/hero-trafostanica.jpg";
 import revizie from "@/assets/services-revizie.jpg";
