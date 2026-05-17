@@ -29,21 +29,19 @@ export const ContactForm = () => {
 
   const onSubmit = async (values: FormValues) => {
     try {
-      const { data: inserted, error } = await supabase
-        .from("contact_submissions")
-        .insert({
-          name: values.name,
-          contact: values.contact,
-          message: values.message,
-        })
-        .select("id")
-        .single();
+      const id = crypto.randomUUID();
+      const { error } = await supabase.from("contact_submissions").insert({
+        id,
+        name: values.name,
+        contact: values.contact,
+        message: values.message,
+      });
       if (error) throw error;
 
       // Fire-and-forget email notification
       supabase.functions
         .invoke("send-contact-email", {
-          body: { id: inserted?.id, ...values },
+          body: { id, ...values },
         })
         .catch(() => {
           /* dopyt je uložený v DB, email je len bonus */
