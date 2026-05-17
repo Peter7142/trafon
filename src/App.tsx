@@ -2,13 +2,14 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import Discover from "./pages/Discover";
-import Auth from "./pages/Auth";
-import Admin from "./pages/Admin";
-import MyEvents from "./pages/MyEvents";
-import CreateEvent from "./pages/CreateEvent";
-import EditEvent from "./pages/EditEvent";
+import { SiteLayout } from "@/components/site/SiteLayout";
+import Home from "./pages/Home";
+import Trafostanice from "./pages/Trafostanice";
+import Sluzby from "./pages/Sluzby";
+import Referencie from "./pages/Referencie";
+import Opravnenia from "./pages/Opravnenia";
+import ONas from "./pages/ONas";
+import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
 
 const App = () => (
@@ -16,15 +17,16 @@ const App = () => (
     <Toaster />
     <Sonner />
     <Routes>
-      <Route path="/" element={<Discover />} />
-      <Route path="/event/:id" element={<Index />} />
-      <Route path="/event/:id/edit" element={<EditEvent />} />
-      <Route path="/my-events" element={<MyEvents />} />
-      <Route path="/create-event" element={<CreateEvent />} />
-      <Route path="/auth" element={<Auth />} />
-      <Route path="/admin" element={<Admin />} />
-      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-      <Route path="*" element={<NotFound />} />
+      <Route element={<SiteLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/trafostanice" element={<Trafostanice />} />
+        <Route path="/sluzby" element={<Sluzby />} />
+        <Route path="/referencie" element={<Referencie />} />
+        <Route path="/opravnenia" element={<Opravnenia />} />
+        <Route path="/o-nas" element={<ONas />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
     </Routes>
   </TooltipProvider>
 );
