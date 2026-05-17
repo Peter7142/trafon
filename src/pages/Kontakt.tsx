@@ -1,14 +1,14 @@
 import { SEO } from "@/components/site/SEO";
-import { ContactForm } from "@/components/site/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Clock, Building } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Phone, Mail, MapPin, Clock, Building, ArrowRight } from "lucide-react";
 
 const Kontakt = () => {
   return (
     <>
       <SEO
-        title="Kontakt — Foton Energy s.r.o. Nitra"
-        description="Kontaktujte nás telefonicky, emailom alebo cez formulár. Odpovieme do 24 hodín. Foton Energy s.r.o., Nitra, Golianovská 420/61."
+        title="Kontakt — Foton Energy s.r.o. Nitra | TRAFON trafostanice"
+        description="Kontaktujte nás priamo telefonicky alebo emailom. Odpovedáme do 24 hodín. Foton Energy s.r.o., Nitra, Golianovská 420/61."
         path="/kontakt"
       />
 
@@ -16,57 +16,88 @@ const Kontakt = () => {
         <div className="absolute inset-0 bg-pulse-soft opacity-60" />
         <div className="container-page relative">
           <h1 className="font-display text-4xl md:text-6xl font-bold mb-4">
-            Ozvite sa nám
+            Ozvite sa nám priamo
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl">
-            Prvá konzultácia je vždy zdarma. Odpovedáme do 24 hodín — bez záväzku, bez stresu.
+            Žiadne formuláre, žiadne čakanie. Zavolajte alebo napíšte —
+            prvá konzultácia je vždy zdarma a bez záväzku.
           </p>
         </div>
       </section>
 
       <section className="py-16">
-        <div className="container-page grid lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
-          <div className="lg:col-span-3">
-            <Card className="shadow-elegant border-border/60">
-              <CardContent className="p-6 md:p-8">
-                <h2 className="font-display text-2xl font-bold text-primary mb-2">
-                  Nezáväzný dopyt
-                </h2>
-                <p className="text-muted-foreground mb-6">
-                  Vyplňte tri polia — ozveme sa vám čo najskôr.
-                </p>
-                <ContactForm />
+        <div className="container-page grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <Card className="shadow-elegant border-border/60 hover:border-accent/60 transition-all hover:-translate-y-1">
+            <CardContent className="p-8 text-center">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-warm flex items-center justify-center mx-auto mb-5">
+                <Phone className="h-8 w-8 text-accent-foreground" />
+              </div>
+              <h2 className="font-display text-xl font-bold text-primary mb-2">
+                Zavolajte nám
+              </h2>
+              <a
+                href="tel:+421944366444"
+                className="text-2xl md:text-3xl font-bold text-accent block mb-4"
+              >
+                +421 944 366 444
+              </a>
+              <p className="text-sm text-muted-foreground mb-5">
+                Po – Pi: 08:00 – 17:00<br />So: 09:00 – 16:00
+              </p>
+              <Button asChild className="bg-gradient-warm text-accent-foreground hover:opacity-90 w-full">
+                <a href="tel:+421944366444">
+                  Zavolať teraz <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-elegant border-border/60 hover:border-accent/60 transition-all hover:-translate-y-1">
+            <CardContent className="p-8 text-center">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-warm flex items-center justify-center mx-auto mb-5">
+                <Mail className="h-8 w-8 text-accent-foreground" />
+              </div>
+              <h2 className="font-display text-xl font-bold text-primary mb-2">
+                Napíšte email
+              </h2>
+              <a
+                href="mailto:info@fotonenergy.sk"
+                className="text-xl md:text-2xl font-bold text-accent block mb-4 break-all"
+              >
+                info@fotonenergy.sk
+              </a>
+              <p className="text-sm text-muted-foreground mb-5">
+                Odpovedáme zvyčajne do 24 hodín, často aj rýchlejšie.
+              </p>
+              <Button asChild variant="outline" className="w-full">
+                <a href="mailto:info@fotonenergy.sk">
+                  Poslať email <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gradient-soft">
+        <div className="container-page grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          {[
+            { i: Building, t: "Foton Energy s.r.o.", d: "TRAFON — trafostanice na kľúč" },
+            { i: MapPin, t: "Adresa", d: "Golianovská 420/61\n949 07 Nitra, Slovensko" },
+            { i: Clock, t: "Otváracie hodiny", d: "Po – Pi: 08:00 – 17:00\nSo: 09:00 – 16:00" },
+          ].map((c) => (
+            <Card key={c.t} className="border-border/60">
+              <CardContent className="p-5 flex gap-4">
+                <div className="h-11 w-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                  <c.i className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <div className="font-semibold text-primary">{c.t}</div>
+                  <div className="text-sm text-foreground/70 whitespace-pre-line">{c.d}</div>
+                </div>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="lg:col-span-2 space-y-4">
-            {[
-              { i: Building, t: "Foton Energy s.r.o.", d: "TRAFON — trafostanice na kľúč" },
-              { i: MapPin, t: "Adresa", d: "Golianovská 420/61\n949 07 Nitra, Slovensko" },
-              { i: Phone, t: "Telefón", d: "+421 944 366 444", href: "tel:+421944366444" },
-              { i: Mail, t: "Email", d: "info@fotonenergy.sk", href: "mailto:info@fotonenergy.sk" },
-              { i: Clock, t: "Otváracie hodiny", d: "Po – Pi: 08:00 – 17:00\nSo: 09:00 – 16:00" },
-            ].map((c) => (
-              <Card key={c.t} className="border-border/60 hover:border-accent/50 transition-colors">
-                <CardContent className="p-5 flex gap-4">
-                  <div className="h-11 w-11 rounded-xl bg-gradient-warm flex items-center justify-center shrink-0">
-                    <c.i className="h-5 w-5 text-accent-foreground" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-primary">{c.t}</div>
-                    {c.href ? (
-                      <a href={c.href} className="text-foreground/80 hover:text-accent whitespace-pre-line">
-                        {c.d}
-                      </a>
-                    ) : (
-                      <div className="text-foreground/80 whitespace-pre-line">{c.d}</div>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          ))}
         </div>
       </section>
     </>

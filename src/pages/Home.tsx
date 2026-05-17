@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SEO } from "@/components/site/SEO";
 import { CTASection } from "@/components/site/CTASection";
-import { ContactForm } from "@/components/site/ContactForm";
 import { ServiceDialog } from "@/components/site/ServiceDialog";
 import {
   ArrowRight,
@@ -18,6 +17,8 @@ import {
   Gauge,
   Building2,
   Sparkles,
+  Phone,
+  Mail,
 } from "lucide-react";
 import hero from "@/assets/hero-trafostanica.jpg";
 import revizie from "@/assets/services-revizie.jpg";
