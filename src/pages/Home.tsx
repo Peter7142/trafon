@@ -116,7 +116,7 @@ const Home = () => {
               Pre koho sme tu
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
-              Sme špecialisti, nie obyčajní elektrikári
+              Sme špecialisti, nie "video" elektrikári
             </h2>
             <p className="text-lg text-muted-foreground">
               Globálne sme tu pre tých, ktorí <em>nechcú zbytočný stres</em> z vybavovania
