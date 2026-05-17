@@ -16,8 +16,15 @@ import {
   Clock,
   Gift,
   Hammer,
+  Globe,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import nemecko1 from "@/assets/nemecko-vn-1.jpg";
+import nemecko2 from "@/assets/nemecko-vn-2.jpg";
+import nemecko3 from "@/assets/nemecko-vn-3.jpg";
+import nemecko4 from "@/assets/nemecko-vn-4.jpg";
+import nemecko5 from "@/assets/nemecko-vn-5.jpg";
+import nemecko6 from "@/assets/nemecko-vn-6.jpg";
 
 interface Chapter {
   year: string;
@@ -29,6 +36,15 @@ interface Chapter {
 }
 
 const chapters: Chapter[] = [
+  {
+    year: "2008",
+    icon: Globe,
+    title: "Kapitola 0 — Nemecko, VN/VVN siete",
+    short: "Od roku 2008 práce na vysokom a veľmi vysokom napätí pre nemeckú distribúciu.",
+    body:
+      "Začali sme tam, kde sa energetika rodí — priamo na sieti. Od roku 2008 sme v Nemecku vykonávali všetky druhy prác na VN/VVN strane distribučnej sústavy: montáže stožiarov, ťahanie a regulácia vodičov, výmena izolátorov, pripájanie trafostaníc. Tu sa zrodila naša pokora pred vysokým napätím — a remeselná presnosť, ktorú dnes nesieme do každého projektu na Slovensku.",
+    badge: "17+ rokov skúseností",
+  },
   {
     year: "2020",
     icon: Hammer,
