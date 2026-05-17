@@ -163,10 +163,33 @@ const ONas = () => {
               Cesta firmy
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-3">
-              Štyri kapitoly, jedna línia
+              Päť kapitol, jedna línia
             </h2>
             <p className="text-muted-foreground">
               Každá kapitola priniesla skúsenosť, ktorú dnes využívate vy — pri svojej trafostanici.
+            </p>
+          </div>
+
+          {/* Galéria z Nemecka — kapitola 0 */}
+          <div className="mb-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-3 rounded-2xl overflow-hidden">
+              {[nemecko1, nemecko2, nemecko3, nemecko4, nemecko5, nemecko6].map((src, i) => (
+                <div
+                  key={i}
+                  className="relative aspect-[3/4] overflow-hidden rounded-lg group"
+                >
+                  <img
+                    src={src}
+                    alt={`Práce na VN/VVN sieti v Nemecku — foto ${i + 1}`}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-muted-foreground mt-3 italic">
+              Nemecko, 2008+ — montáže VVN stožiarov, ťahanie vodičov, pripájanie trafostaníc.
             </p>
           </div>
 
