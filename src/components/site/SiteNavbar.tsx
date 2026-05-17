@@ -19,12 +19,14 @@ export const SiteNavbar = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2" aria-label="TRAFON - Foton Energy">
-          <img src={logo} alt="TRAFON logo" className="h-9 w-9" width={36} height={36} />
-          <div className="leading-tight">
-            <div className="font-display text-lg font-bold text-primary">TRAFON</div>
-            <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Foton Energy</div>
-          </div>
+        <Link to="/" className="flex items-center" aria-label="TRAFON - Foton Energy">
+          <img
+            src={logo}
+            alt="TRAFON logo"
+            className="h-10 md:h-11 w-auto"
+            width={220}
+            height={44}
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
