@@ -40,7 +40,7 @@ export const SiteFooter = () => {
           <ul className="space-y-2 text-sm">
             <li className="flex items-start gap-2">
               <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-              <span>Golianovská 420/61<br />949 07 Nitra</span>
+              <span>Ľubochnianska 4<br />831 04 Bratislava<br /><span className="text-primary-foreground/70">Prevádzka: Nitra-Janíkovce</span></span>
             </li>
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-accent" />
@@ -50,7 +50,7 @@ export const SiteFooter = () => {
               <Mail className="h-4 w-4 text-accent" />
               <a href="mailto:info@fotonenergy.sk" className="hover:text-accent">info@fotonenergy.sk</a>
             </li>
-            <li className="text-primary-foreground/60 text-xs pt-2">IČO: 50 335 *** • SR</li>
+            <li className="text-primary-foreground/60 text-xs pt-2">IČO: 53 366 280 • SR<br />Zápis v OR Mestského súdu Bratislava III, oddiel: Sro, vložka č. 183002/B</li>
           </ul>
         </div>
       </div>
