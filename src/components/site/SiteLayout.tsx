@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { SiteNavbar } from "./SiteNavbar";
 import { SiteFooter } from "./SiteFooter";
+import { TrangonAssistant } from "@/components/TrangonAssistant";
 
 export const SiteLayout = () => {
   return (
@@ -10,6 +11,7 @@ export const SiteLayout = () => {
         <Outlet />
       </main>
       <SiteFooter />
+      <TrangonAssistant />
     </div>
   );
 };
