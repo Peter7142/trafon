@@ -13,7 +13,7 @@ const INTRO: Msg = {
 const PHONE = "+421 944 366 444";
 const PHONE_HREF = "tel:+421944366444";
 
-export const TrafonAssistant = () => {
+export const TrangonAssistant = () => {
   const [open, setOpen] = useState(false);
   const [seen, setSeen] = useState(false);
   const [blink, setBlink] = useState(false);
@@ -339,4 +339,4 @@ export const TrafonAssistant = () => {
   );
 };
 
-export default TrafonAssistant;
+export default TrangonAssistant;
