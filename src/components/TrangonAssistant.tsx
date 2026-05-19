@@ -7,13 +7,13 @@ type Msg = { role: "user" | "assistant"; content: string };
 const INTRO: Msg = {
   role: "assistant",
   content:
-    "Dobrý deň 👋 Som Trangon, váš odborný poradca z TRAFON. Poradím s trafostanicou, opravou transformátora, servisom VN/NN, revíziami, odbornými stanoviskami TI alebo úradnými skúškami. S čím vám môžem pomôcť?",
+    "Dobrý deň 👋 Som Trafon, váš odborný poradca z TRAFON. Poradím s trafostanicou, opravou transformátora, servisom VN/NN, revíziami, odbornými stanoviskami TI alebo úradnými skúškami. S čím vám môžem pomôcť?",
 };
 
 const PHONE = "+421 944 366 444";
 const PHONE_HREF = "tel:+421944366444";
 
-export const TrangonAssistant = () => {
+export const TrafonAssistant = () => {
   const [open, setOpen] = useState(false);
   const [seen, setSeen] = useState(false);
   const [blink, setBlink] = useState(false);
@@ -170,7 +170,7 @@ export const TrangonAssistant = () => {
           {tooltip && !seen && (
             <div className="hidden md:block mr-3 pointer-events-auto animate-fade-in">
               <div className="relative bg-card text-card-foreground border border-border shadow-elegant rounded-xl px-4 py-3 max-w-[240px] text-sm">
-                <p className="font-medium">Som Trangon 👋</p>
+                <p className="font-medium">Som Trafon 👋</p>
                 <p className="text-muted-foreground text-xs mt-1">
                   Spýtajte sa ma na trafostanicu, opravu alebo revíziu.
                 </p>
@@ -181,7 +181,7 @@ export const TrangonAssistant = () => {
 
           <button
             onClick={openChat}
-            aria-label="Otvoriť asistenta Trangon"
+            aria-label="Otvoriť asistenta Trafon"
             className={`pointer-events-auto group relative bg-gradient-trust text-primary-foreground shadow-glow rounded-l-2xl pl-2 pr-3 py-3 flex items-center gap-2 hover:pr-4 transition-all duration-300 ${
               pulse ? "animate-pulse-soft" : ""
             }`}
@@ -194,7 +194,7 @@ export const TrangonAssistant = () => {
             <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-accent/60 bg-white">
               <img
                 src={avatar}
-                alt="Trangon — AI predajca TRAFON"
+                alt="Trafon — AI predajca TRAFON"
                 className="w-full h-full object-cover object-top scale-110"
                 loading="lazy"
               />
@@ -206,7 +206,7 @@ export const TrangonAssistant = () => {
               <span className="text-[11px] uppercase tracking-wider text-accent font-semibold flex items-center gap-1">
                 <Sparkles className="w-3 h-3" /> AI poradca
               </span>
-              <span className="text-sm font-semibold">Trangon</span>
+              <span className="text-sm font-semibold">Trafon</span>
             </div>
           </button>
         </div>
@@ -220,7 +220,7 @@ export const TrangonAssistant = () => {
             <div className="relative w-14 h-14 rounded-full overflow-hidden ring-2 ring-accent/70 bg-white shrink-0">
               <img
                 src={avatar}
-                alt="Trangon"
+                alt="Trafon"
                 className="w-full h-full object-cover object-top scale-110"
               />
               {blink && (
@@ -230,7 +230,7 @@ export const TrangonAssistant = () => {
             </div>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2">
-                <h3 className="font-semibold text-base">Trangon</h3>
+                <h3 className="font-semibold text-base">Trafon</h3>
                 <span className="text-[10px] uppercase tracking-wider bg-accent/20 text-accent px-1.5 py-0.5 rounded">
                   AI · TRAFON
                 </span>
@@ -310,7 +310,7 @@ export const TrangonAssistant = () => {
                   }
                 }}
                 rows={1}
-                placeholder="Napíšte správu Trangonovi…"
+                placeholder="Napíšte správu Trafonovi…"
                 className="flex-1 resize-none bg-background border border-input rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring max-h-32"
               />
               <button
@@ -339,4 +339,4 @@ export const TrangonAssistant = () => {
   );
 };
 
-export default TrangonAssistant;
+export default TrafonAssistant;
