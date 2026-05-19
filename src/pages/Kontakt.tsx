@@ -8,7 +8,7 @@ const Kontakt = () => {
     <>
       <SEO
         title="Kontakt — Foton Energy s.r.o. Nitra | TRAFON trafostanice"
-        description="Kontaktujte nás priamo telefonicky alebo emailom. Odpovedáme do 24 hodín. Foton Energy s.r.o., Nitra, Golianovská 420/61."
+        description="Kontaktujte nás priamo telefonicky alebo emailom. Odpovedáme do 24 hodín. Foton Energy s.r.o., Ľubochnianska 4, 831 04 Bratislava. Prevádzka Nitra-Janíkovce."
         path="/kontakt"
       />
 
