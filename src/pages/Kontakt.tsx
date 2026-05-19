@@ -8,7 +8,7 @@ const Kontakt = () => {
     <>
       <SEO
         title="Kontakt — Foton Energy s.r.o. Nitra | TRAFON trafostanice"
-        description="Kontaktujte nás priamo telefonicky alebo emailom. Odpovedáme do 24 hodín. Foton Energy s.r.o., Nitra, Golianovská 420/61."
+        description="Kontaktujte nás priamo telefonicky alebo emailom. Odpovedáme do 24 hodín. Foton Energy s.r.o., Ľubochnianska 4, 831 04 Bratislava. Prevádzka Nitra-Janíkovce."
         path="/kontakt"
       />
 
@@ -83,7 +83,7 @@ const Kontakt = () => {
         <div className="container-page grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
           {[
             { i: Building, t: "Foton Energy s.r.o.", d: "TRAFON — trafostanice na kľúč" },
-            { i: MapPin, t: "Adresa", d: "Golianovská 420/61\n949 07 Nitra, Slovensko" },
+            { i: MapPin, t: "Adresa", d: "Ľubochnianska 4\n831 04 Bratislava, Slovensko\nPrevádzka: Nitra-Janíkovce" },
             { i: Clock, t: "Otváracie hodiny", d: "Po – Pi: 08:00 – 17:00\nSo: 09:00 – 16:00" },
           ].map((c) => (
             <Card key={c.t} className="border-border/60">
