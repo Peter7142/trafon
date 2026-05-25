@@ -124,11 +124,12 @@ const Sluzby = () => {
         <div className="absolute inset-0 bg-pulse-soft opacity-60" />
         <div className="container-page relative">
           <h1 className="font-display text-4xl md:text-6xl font-bold mb-5 max-w-3xl">
-            Všetko pod jednou strechou
+            Revízie, servis a údržba trafostaníc NN/VN — všetko pod jednou strechou
           </h1>
           <p className="text-lg md:text-xl max-w-2xl text-primary-foreground/90">
-            Od projektovania cez montáž a skúšky až po spustenie a údržbu —
-            získate jedného spoľahlivého partnera pre celý životný cyklus trafostanice.
+            Elektroprojekty, kenotrónové merania, odborné prehliadky, úradné skúšky,
+            BOZP, požiarna ochrana a servis transformátorov — jeden spoľahlivý partner
+            pre celý životný cyklus trafostanice.
           </p>
         </div>
       </section>

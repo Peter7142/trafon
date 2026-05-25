@@ -26,10 +26,11 @@ const Referencie = () => {
         <div className="absolute inset-0 bg-pulse-soft opacity-60" />
         <div className="container-page relative">
           <h1 className="font-display text-4xl md:text-6xl font-bold mb-5">
-            Videá a <span className="text-gradient-warm">referencie</span>
+            Referencie — realizované <span className="text-gradient-warm">trafostanice a transformátory</span> na Slovensku
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl">
-            Dôvera, ktorú si zaslúžime každým hotovým projektom. Pozrite si, s kým spolupracujeme.
+            Dôvera, ktorú si zaslúžime každým hotovým projektom. Pozrite si videá a partnerov,
+            s ktorými spolupracujeme — od IKEA Industrie po Slovenské elektrárne.
           </p>
         </div>
       </section>

@@ -64,12 +64,13 @@ const Home = () => {
               <Sparkles className="h-4 w-4" /> Akcia: 6 ročný servis ZDARMA v hodnote 8 590 €
             </span>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
-              Trafostanica <span className="text-gradient-warm">bez starostí</span>,
-              <br className="hidden md:block" /> bez stresu, bez pokút.
+              Trafostanice a transformátory <span className="text-gradient-warm">na kľúč</span>
+              <br className="hidden md:block" /> — Bratislava, Nitra, celé Slovensko
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
+              <strong>Predaj, montáž, revízie NN/VN, servis a údržba trafostaníc</strong> bez starostí.
               Postaráme sa o všetko — od <strong>projektu</strong>, cez{" "}
-              <strong>montáž a revízie NN/VN</strong>, až po <strong>spustenie a údržbu</strong>.
+              <strong>kenotrónové merania a úradné skúšky</strong>, až po <strong>spustenie a dlhodobú údržbu</strong>.
               Vaša prevádzka bude bezpečná, zákonná a chránená pred výpadkami.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
