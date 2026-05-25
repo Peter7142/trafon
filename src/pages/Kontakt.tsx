@@ -16,11 +16,11 @@ const Kontakt = () => {
         <div className="absolute inset-0 bg-pulse-soft opacity-60" />
         <div className="container-page relative">
           <h1 className="font-display text-4xl md:text-6xl font-bold mb-4">
-            Ozvite sa nám priamo
+            Kontakt — TRAFON, Bratislava & prevádzka Nitra-Janíkovce
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl">
-            Žiadne formuláre, žiadne čakanie. Zavolajte alebo napíšte —
-            prvá konzultácia je vždy zdarma a bez záväzku.
+            Trafostanice, transformátory, revízie NN/VN a servis — zavolajte alebo napíšte.
+            Prvá konzultácia je vždy zdarma a bez záväzku.
           </p>
         </div>
       </section>

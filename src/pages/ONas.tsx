@@ -146,11 +146,11 @@ const ONas = () => {
             O nás
           </span>
           <h1 className="font-display text-4xl md:text-6xl font-bold mb-5 max-w-3xl">
-            Náš príbeh v <span className="text-gradient-warm">kapitolách</span>
+            TRAFON — špecialisti na <span className="text-gradient-warm">trafostanice a transformátory</span> (Foton Energy s.r.o.)
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-3xl">
-            Päť rokov, tri pivoty, jeden zámer — postarať sa o vašu prevádzku tak, aby ste mali
-            pokoj v duši a istotu v sieti.
+            Päť rokov, tri pivoty, jeden zámer — postarať sa o vašu trafostanicu a NN/VN sieť tak,
+            aby ste mali pokoj v duši a istotu v prevádzke.
           </p>
         </div>
       </section>

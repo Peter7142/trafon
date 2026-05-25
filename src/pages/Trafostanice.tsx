@@ -22,11 +22,11 @@ const Trafostanice = () => {
             Trafostanice
           </span>
           <h1 className="font-display text-4xl md:text-6xl font-bold mb-5 max-w-3xl">
-            Trafostanice <span className="text-gradient-warm">na kľúč</span> aj rekonštrukcie
+            Trafostanice <span className="text-gradient-warm">na kľúč</span> a predaj transformátorov — nové aj rekonštrukcie
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl">
-            Nové trafostanice s kompletnou dodávkou, predaj transformátorov a všetkého
-            potrebného materiálu — bez stresu, bez výpadkov, bez pokút.
+            Kiosková trafostanica, VN/NN rozvádzače, transformátory rôznych výkonov,
+            kabeláž a VN spojky — kompletná dodávka bez stresu, bez výpadkov, bez pokút.
           </p>
         </div>
       </section>

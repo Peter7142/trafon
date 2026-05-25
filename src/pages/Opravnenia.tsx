@@ -26,11 +26,11 @@ const Opravnenia = () => {
         <div className="absolute inset-0 bg-pulse-soft opacity-60" />
         <div className="container-page relative">
           <h1 className="font-display text-4xl md:text-6xl font-bold mb-5">
-            Oprávnenia a <span className="text-gradient-warm">osvedčenia</span>
+            Oprávnenia a <span className="text-gradient-warm">osvedčenia</span> pre elektro VN/NN — Technická inšpekcia SR
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl">
-            Revízie • Povolenia • Osvedčenia • Skúšky • Previerky • Funkcionality —
-            všetko robíme pre nových aj existujúcich partnerov.
+            Revízie NN/VN • Povolenia • Osvedčenia • Úradné skúšky • Odborné prehliadky •
+            BOZP a PO — všetko robíme pre nových aj existujúcich partnerov.
           </p>
         </div>
       </section>
