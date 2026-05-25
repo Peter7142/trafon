@@ -41,8 +41,7 @@ const Home = () => {
           name: "Trafostanice na kľúč",
           provider: { "@type": "Organization", name: "Foton Energy s.r.o." },
           areaServed: "SK",
-          description:
-            "Komplexné riešenie trafostaníc — projektovanie, montáž, revízie a údržba NN/VN sústav.",
+          description: "Komplexné riešenie trafostaníc — projektovanie, montáž, revízie a údržba NN/VN sústav.",
         }}
       />
 
@@ -68,10 +67,10 @@ const Home = () => {
               <br className="hidden md:block" /> — Bratislava, Nitra, celé Slovensko
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
-              <strong>Predaj, montáž, revízie NN/VN, servis a údržba trafostaníc</strong> bez starostí.
-              Postaráme sa o všetko — od <strong>projektu</strong>, cez{" "}
-              <strong>kenotrónové merania a úradné skúšky</strong>, až po <strong>spustenie a dlhodobú údržbu</strong>.
-              Vaša prevádzka bude bezpečná, zákonná a chránená pred výpadkami.
+              <strong>Predaj, montáž, revízie NN/VN, servis a údržba trafostaníc</strong> bez starostí. Postaráme sa o
+              všetko — od <strong>projektu</strong>, cez <strong>kenotrónové merania a úradné skúšky</strong>, až po{" "}
+              <strong>spustenie a dlhodobú údržbu</strong>. Vaša prevádzka bude bezpečná, zákonná a chránená pred
+              výpadkami.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
@@ -95,14 +94,12 @@ const Home = () => {
             <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
               {[
                 { v: "420+", l: "úspešných inštalácií" },
-                { v: "6 rokov", l: "servis ZDARMA" },
+                { v: "6,1 rokov", l: "servis ZDARMA" },
                 { v: "100 %", l: "schválenie TI" },
                 { v: "24 h", l: "rýchlosť odpovede" },
               ].map((s) => (
                 <div key={s.l}>
-                  <div className="font-display text-3xl md:text-4xl font-bold text-accent">
-                    {s.v}
-                  </div>
+                  <div className="font-display text-3xl md:text-4xl font-bold text-accent">{s.v}</div>
                   <div className="text-sm text-primary-foreground/75">{s.l}</div>
                 </div>
               ))}
@@ -115,17 +112,14 @@ const Home = () => {
       <section className="py-20 bg-gradient-soft">
         <div className="container-page">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-accent font-semibold text-sm uppercase tracking-widest">
-              Pre koho sme tu
-            </span>
+            <span className="text-accent font-semibold text-sm uppercase tracking-widest">Pre koho sme tu</span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
               Sme špecialisti na NN/VN rozvody nad 1000 V
             </h2>
             <p className="text-lg text-muted-foreground">
-              Hovoríme rečou <strong>energetikov vo firmách</strong>, ktorí potrebujú niekoho,
-              kto zvládne komplexný úkon, modernizáciu či opravu na VN strane —{" "}
-              <em>bez stresu z papierov, predpisov a distribúcie</em>. Postaráme sa o všetko od
-              projektu cez montáž a skúšky až po spustenie a údržbu.
+              Hovoríme rečou <strong>energetikov vo firmách</strong>, ktorí potrebujú niekoho, kto zvládne komplexný
+              úkon, modernizáciu či opravu na VN strane — <em>bez stresu z papierov, predpisov a distribúcie</em>.
+              Postaráme sa o všetko od projektu cez montáž a skúšky až po spustenie a údržbu.
             </p>
           </div>
 
@@ -160,9 +154,7 @@ const Home = () => {
       <section className="py-20">
         <div className="container-page">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-accent font-semibold text-sm uppercase tracking-widest">
-              Naše riešenia
-            </span>
+            <span className="text-accent font-semibold text-sm uppercase tracking-widest">Naše riešenia</span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
               Čo všetko pre vás zabezpečíme
             </h2>
@@ -176,14 +168,21 @@ const Home = () => {
               trigger={
                 <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60">
                   <div className="relative h-48 overflow-hidden">
-                    <img src={trafoNova} alt="Nová trafostanica" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    <img
+                      src={trafoNova}
+                      alt="Nová trafostanica"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
                     <div className="absolute top-3 right-3 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full">
                       AKCIA -100% SERVIS
                     </div>
                   </div>
                   <div className="p-5">
                     <h3 className="font-display text-xl font-bold text-primary mb-2">Nová trafostanica na kľúč</h3>
-                    <p className="text-sm text-muted-foreground">Komplet od projektu po spustenie + 6 rokov servis zdarma.</p>
+                    <p className="text-sm text-muted-foreground">
+                      Komplet od projektu po spustenie + 6 rokov servis zdarma.
+                    </p>
                   </div>
                 </button>
               }
@@ -203,11 +202,18 @@ const Home = () => {
               trigger={
                 <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60">
                   <div className="relative h-48 overflow-hidden">
-                    <img src={projekt} alt="Elektroprojekt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    <img
+                      src={projekt}
+                      alt="Elektroprojekt"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-5">
                     <h3 className="font-display text-xl font-bold text-primary mb-2">Projektovanie elektro & EE</h3>
-                    <p className="text-sm text-muted-foreground">Elektroprojekty, statika, BOZP, požiarna ochrana — všetko v jednom.</p>
+                    <p className="text-sm text-muted-foreground">
+                      Elektroprojekty, statika, BOZP, požiarna ochrana — všetko v jednom.
+                    </p>
                   </div>
                 </button>
               }
@@ -227,7 +233,12 @@ const Home = () => {
               trigger={
                 <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60">
                   <div className="relative h-48 overflow-hidden">
-                    <img src={revizie} alt="Revízie a merania" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    <img
+                      src={revizie}
+                      alt="Revízie a merania"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-5">
                     <h3 className="font-display text-xl font-bold text-primary mb-2">Revízie a merania NN/VN</h3>
@@ -249,8 +260,15 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-10">
-            <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link to="/sluzby">Všetky služby <ArrowRight className="ml-1 h-4 w-4" /></Link>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            >
+              <Link to="/sluzby">
+                Všetky služby <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -272,9 +290,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <Card className="border-destructive/20 bg-destructive/5">
               <CardContent className="p-7">
-                <h3 className="font-display text-2xl font-bold text-destructive mb-4">
-                  Bez nás riskujete
-                </h3>
+                <h3 className="font-display text-2xl font-bold text-destructive mb-4">Bez nás riskujete</h3>
                 <ul className="space-y-3">
                   {[
                     "Stres z papierovačiek a úradov",
@@ -293,9 +309,7 @@ const Home = () => {
 
             <Card className="border-accent/40 bg-card shadow-elegant">
               <CardContent className="p-7">
-                <h3 className="font-display text-2xl font-bold text-primary mb-4">
-                  S nami získate
-                </h3>
+                <h3 className="font-display text-2xl font-bold text-primary mb-4">S nami získate</h3>
                 <ul className="space-y-3">
                   {[
                     "Bezpečnosť, kontrolu a pohodu pri prevádzke",
@@ -319,9 +333,7 @@ const Home = () => {
       <section className="py-20">
         <div className="container-page">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-accent font-semibold text-sm uppercase tracking-widest">
-              Bežný postup
-            </span>
+            <span className="text-accent font-semibold text-sm uppercase tracking-widest">Bežný postup</span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
               8 jasných krokov k vašej trafostanici
             </h2>
@@ -368,9 +380,8 @@ const Home = () => {
                 Silný partner, na ktorého sa spoľahnete
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Pracovali sme pre <strong>IKEA Industrie</strong> aj{" "}
-                <strong>Slovenské elektrárne</strong> — jednu z najziskovejších organizácií
-                na Slovensku. Vieme, ako vyzerá profesionálna prevádzka a tú istú kvalitu
+                Pracovali sme pre <strong>IKEA Industrie</strong> aj <strong>Slovenské elektrárne</strong> — jednu z
+                najziskovejších organizácií na Slovensku. Vieme, ako vyzerá profesionálna prevádzka a tú istú kvalitu
                 prinesieme do vášho projektu.
               </p>
               <div className="grid grid-cols-2 gap-4">
@@ -393,17 +404,19 @@ const Home = () => {
                   <div className="flex items-center gap-2 text-accent text-sm font-bold uppercase tracking-widest mb-3">
                     <Clock className="h-4 w-4" /> Limitovaná akcia
                   </div>
-                  <h3 className="font-display text-3xl font-bold text-primary mb-3">
-                    6 rokov servisu ZDARMA
-                  </h3>
+                  <h3 className="font-display text-3xl font-bold text-primary mb-3">6 rokov servisu ZDARMA</h3>
                   <p className="text-foreground/80 mb-2">
-                    Pri objednávke novej trafostanice <strong>získate bezplatný servis na 6 rokov</strong>{" "}
-                    v celkovej hodnote <span className="text-gradient-warm font-bold">8 590 €</span>.
+                    Pri objednávke novej trafostanice <strong>získate bezplatný servis na 6 rokov</strong> v celkovej
+                    hodnote <span className="text-gradient-warm font-bold">8 590 €</span>.
                   </p>
                   <p className="text-sm text-muted-foreground mb-6">
                     Ceny materiálu stúpajú — akcia má obmedzenú platnosť, kým ich vieme držať.
                   </p>
-                  <Button asChild size="lg" className="w-full bg-gradient-warm text-accent-foreground hover:opacity-90 shadow-glow h-12">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="w-full bg-gradient-warm text-accent-foreground hover:opacity-90 shadow-glow h-12"
+                  >
                     <Link to="/kontakt">
                       Využiť akciu teraz <ArrowRight className="ml-1 h-5 w-5" />
                     </Link>
@@ -420,15 +433,13 @@ const Home = () => {
         <div className="container-page">
           <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto items-start">
             <div>
-              <span className="text-accent font-semibold text-sm uppercase tracking-widest">
-                Nezáväzný dopyt
-              </span>
+              <span className="text-accent font-semibold text-sm uppercase tracking-widest">Nezáväzný dopyt</span>
               <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
                 Napíšte nám — odpovieme do 24 hodín
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Stačí pár slov o vašom projekte. Pripravíme prvý návrh a bezplatnú konzultáciu.
-                Žiadne sklamania, žiadne nečakané náklady.
+                Stačí pár slov o vašom projekte. Pripravíme prvý návrh a bezplatnú konzultáciu. Žiadne sklamania, žiadne
+                nečakané náklady.
               </p>
               <ul className="space-y-3 text-foreground/80">
                 {[
