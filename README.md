@@ -2,7 +2,7 @@
 
 A modern, full-stack event management platform built with React, TypeScript, and Lovable Cloud. Create, discover, and manage events with an intuitive interface and powerful features.
 
-## 🌟 Features 12
+## 🌟 Features 22
 
 ### Event Management
 - **Create Events**: Easy-to-use form with image upload, date/time selection, and location integration
