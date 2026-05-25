@@ -94,7 +94,7 @@ const Home = () => {
             <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
               {[
                 { v: "420+", l: "úspešných inštalácií" },
-                { v: "6,1 rokov", l: "servis ZDARMA" },
+                { v: "6 rokov", l: "servis ZDARMA" },
                 { v: "100 %", l: "schválenie TI" },
                 { v: "24 h", l: "rýchlosť odpovede" },
               ].map((s) => (
