@@ -2,18 +2,9 @@ import { Link } from "react-router-dom";
 import { SEO } from "@/components/site/SEO";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { blogPostMetas } from "@/data/blogPosts";
 
-export const blogPosts = [
-  {
-    slug: "cena-trafostanice",
-    title: "Koľko stojí trafostanica na kľúč? Reálne ceny 2024",
-    excerpt:
-      "Zistite reálne ceny trafostaníc na Slovensku. Kioskové, murované, pre FVE. Koľko zaplatíte za projekt, montáž a revízie? Bezplatná kalkulácia.",
-    date: "2024-09-15",
-    readTime: "6 minút",
-    category: "Odborné rady",
-  },
-];
+export { blogPostMetas as blogPosts };
 
 const Blog = () => {
   return (
@@ -40,7 +31,7 @@ const Blog = () => {
       <section className="py-20">
         <div className="container-page">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((p) => (
+            {blogPostMetas.map((p) => (
               <Link key={p.slug} to={`/blog/${p.slug}`}>
                 <Card className="h-full hover:shadow-elegant hover:-translate-y-1 transition-all border-border/60">
                   <CardContent className="p-6">
