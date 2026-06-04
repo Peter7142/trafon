@@ -11,6 +11,7 @@ const links = [
   { to: "/referencie", label: "Referencie" },
   { to: "/opravnenia", label: "Oprávnenia" },
   { to: "/o-nas", label: "O nás" },
+  { to: "/blog", label: "Blog" },
 ];
 
 export const SiteNavbar = () => {
