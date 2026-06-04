@@ -21,7 +21,14 @@ import {
   Mail,
   HeartPulse,
   PlugZap,
+  Star,
 } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import hero from "@/assets/hero-trafostanica.jpg";
 import revizie from "@/assets/services-revizie.jpg";
 import projekt from "@/assets/services-projekt.jpg";
@@ -513,6 +520,100 @@ const Home = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* RECENZIE */}
+      <section className="py-20 bg-gradient-soft">
+        <div className="container-page">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-accent font-semibold text-sm uppercase tracking-widest">Recenzie zákazníkov</span>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
+              Čo o nás hovoria firmy, pre ktoré sme stavali
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5 max-w-6xl mx-auto">
+            {[
+              {
+                t: "Spustenie nového výrobného závodu bez jediného zdržania — projekt, montáž, revízie aj kolaudácia zvládli na výbornú.",
+                f: "Priemyselný park",
+                l: "Bratislava",
+                s: 5,
+              },
+              {
+                t: "Konečne niekto, kto rozumie aj papierom aj montáži. 6 rokov servisu zdarma je férová ponuka, akú nikto iný nedáva.",
+                f: "Výrobná spoločnosť",
+                l: "Nitra",
+                s: 5,
+              },
+              {
+                t: "Kenotrónové merania a kompletná dokumentácia presne podľa STN — distribútor pripojil trafostanicu na prvýkrát bez výhrad.",
+                f: "Developer logistického areálu",
+                l: "Trnava",
+                s: 5,
+              },
+            ].map((r) => (
+              <Card key={r.f} className="shadow-card border-border/60">
+                <CardContent className="p-6">
+                  <div className="flex gap-1 text-accent mb-3">
+                    {[...Array(r.s)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-foreground/85 italic mb-4">"{r.t}"</p>
+                  <div className="text-sm">
+                    <div className="font-bold text-primary">{r.f}</div>
+                    <div className="text-muted-foreground">{r.l}</div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20">
+        <div className="container-page max-w-3xl">
+          <div className="text-center mb-10">
+            <span className="text-accent font-semibold text-sm uppercase tracking-widest">Časté otázky</span>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mt-3 mb-4">
+              Odpovede na to, čo sa pýtate najčastejšie
+            </h2>
+          </div>
+          <Accordion type="single" collapsible className="w-full">
+            {[
+              {
+                q: "Čo je trafostanica na kľúč?",
+                a: "Trafostanica na kľúč je kompletná realizácia od projektu cez dodávku, montáž až po odovzdanie hotovej trafostanice. Zákazník sa nestará o nič — TRAFON vybavuje všetky povolenia, komunikáciu s distribútorom (SSD, ZSD, VSD) aj revízie.",
+              },
+              {
+                q: "Koľko stojí trafostanica na Slovensku?",
+                a: "Cena trafostanice závisí od výkonu transformátora, typu skeletu a lokality. Orientačne od 30 000 € za jednoduchú kioskovú trafostanicu až po 150 000+ € pri väčších projektoch. Kontaktujte TRAFON pre bezplatnú cenovú ponuku.",
+              },
+              {
+                q: "Čo je kenotrónové meranie VN káblov?",
+                a: "Kenotrónové meranie je skúška integrity VN káblov pomocou vysokého napätia (VLF metóda). Odhaľuje poruchy izolácie skôr než spôsobia výpadok. Povinné pri uvedení novej trafostanice do prevádzky a pri periodických revíziách podľa STN noriem.",
+              },
+              {
+                q: "Ako často treba revíziu trafostanice?",
+                a: "Podľa STN 33 1500 je povinná revízia trafostanice raz za 4 roky (vonkajšie prostredie) alebo raz za 5 rokov (vnútorné prostredie). Ročná vizuálna prehliadka je odporúčaná. TRAFON ponúka 6-ročný servisný balík ZDARMA v hodnote 8 590 €.",
+              },
+              {
+                q: "Kde pôsobí TRAFON — Foton Energy?",
+                a: "TRAFON realizuje trafostanice a transformátory na celom Slovensku. Hlavné centrá sú Bratislava a Nitra. Vyjazďame do celej SR bez príplatku za dopravu v rámci projektovej ceny.",
+              },
+            ].map((f, i) => (
+              <AccordionItem key={i} value={`item-${i}`}>
+                <AccordionTrigger className="text-left font-display text-lg font-bold text-primary">
+                  {f.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-foreground/85 text-base leading-relaxed">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 
