@@ -164,99 +164,125 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ServiceDialog
-              trigger={
-                <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={trafoNova}
-                      alt="Nová trafostanica"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    <div className="absolute top-3 right-3 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full">
-                      AKCIA -100% SERVIS
+            <div className="flex flex-col gap-3">
+              <ServiceDialog
+                trigger={
+                  <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60 w-full">
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={trafoNova}
+                        alt="Nová trafostanica na kľúč — kiosková betónová trafostanica"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-3 right-3 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full">
+                        AKCIA -100% SERVIS
+                      </div>
                     </div>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-xl font-bold text-primary mb-2">Nová trafostanica na kľúč</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Komplet od projektu po spustenie + 6 rokov servis zdarma.
-                    </p>
-                  </div>
-                </button>
-              }
-              title="Nová trafostanica na kľúč"
-              image={trafoNova}
-              description="Postaráme sa o celý proces — od návrhu cez vyjadrenie distribúcie, dokumentáciu, montáž, revízie až po spustenie. Vy získate funkčnú, schválenú a chránenú trafostanicu bez jediného problému."
-              benefits={[
-                "6 ročný bezstarostný servis ZDARMA v hodnote 8 590 €",
-                "Revízie a inšpekčné merania v cene",
-                "Všetky zákonné povinnosti pre bezpečné pripojenie",
-                "Kenotrónové meranie VN strany pred spustením",
-                "Schválenie Technickou inšpekciou bez zbytočných zdržaní",
-              ]}
-            />
+                    <div className="p-5">
+                      <h2 className="font-display text-xl font-bold text-primary mb-2">Trafostanica na kľúč</h2>
+                      <p className="text-sm text-muted-foreground">
+                        Kompletná realizácia trafostanice od projektu po spustenie + 6 rokov servis zdarma.
+                      </p>
+                    </div>
+                  </button>
+                }
+                title="Nová trafostanica na kľúč"
+                image={trafoNova}
+                description="Postaráme sa o celý proces — od návrhu cez vyjadrenie distribúcie, dokumentáciu, montáž, revízie až po spustenie. Vy získate funkčnú, schválenú a chránenú trafostanicu bez jediného problému."
+                benefits={[
+                  "6 ročný bezstarostný servis ZDARMA v hodnote 8 590 €",
+                  "Revízie a inšpekčné merania v cene",
+                  "Všetky zákonné povinnosti pre bezpečné pripojenie",
+                  "Kenotrónové meranie VN strany pred spustením",
+                  "Schválenie Technickou inšpekciou bez zbytočných zdržaní",
+                ]}
+              />
+              <Link
+                to="/trafostanice"
+                className="inline-flex items-center gap-1 text-accent font-semibold text-sm hover:underline"
+              >
+                Zistiť viac o trafostaniciach na kľúč <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
 
-            <ServiceDialog
-              trigger={
-                <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={projekt}
-                      alt="Elektroprojekt"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-xl font-bold text-primary mb-2">Projektovanie elektro & EE</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Elektroprojekty, statika, BOZP, požiarna ochrana — všetko v jednom.
-                    </p>
-                  </div>
-                </button>
-              }
-              title="Projektovanie elektro a energetické projekty"
-              image={projekt}
-              description="Vypracujeme elektroprojekt na mieru — vrátane statických posudkov, BOZP, požiarnej ochrany a kompletnej dokumentácie. Spojíme aj fotovoltaiku a batériové úložiská, ak chcete úspory cez OZE."
-              benefits={[
-                "Elektroprojekty schválené Technickou inšpekciou",
-                "Statické posudky, BOZP plán, bezpečnostný dozor",
-                "Komplexné a predkomplexné skúšky",
-                "Úradné skúšky tesne pred spustením",
-                "Fotovoltaika a batériové úložiská ako bonus",
-              ]}
-            />
+            <div className="flex flex-col gap-3">
+              <ServiceDialog
+                trigger={
+                  <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60 w-full">
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={projekt}
+                        alt="Elektroprojekt trafostanice a energetické projekty"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-5">
+                      <h2 className="font-display text-xl font-bold text-primary mb-2">Projektovanie elektro & EE</h2>
+                      <p className="text-sm text-muted-foreground">
+                        Elektroprojekty trafostaníc, statika, BOZP, požiarna ochrana — všetko v jednom.
+                      </p>
+                    </div>
+                  </button>
+                }
+                title="Projektovanie elektro a energetické projekty"
+                image={projekt}
+                description="Vypracujeme elektroprojekt na mieru — vrátane statických posudkov, BOZP, požiarnej ochrany a kompletnej dokumentácie. Spojíme aj fotovoltaiku a batériové úložiská, ak chcete úspory cez OZE."
+                benefits={[
+                  "Elektroprojekty schválené Technickou inšpekciou",
+                  "Statické posudky, BOZP plán, bezpečnostný dozor",
+                  "Komplexné a predkomplexné skúšky",
+                  "Úradné skúšky tesne pred spustením",
+                  "Fotovoltaika a batériové úložiská ako bonus",
+                ]}
+              />
+              <Link
+                to="/sluzby"
+                className="inline-flex items-center gap-1 text-accent font-semibold text-sm hover:underline"
+              >
+                Zistiť viac o projektovaní <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
 
-            <ServiceDialog
-              trigger={
-                <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={revizie}
-                      alt="Revízie a merania"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-xl font-bold text-primary mb-2">Revízie a merania NN/VN</h3>
-                    <p className="text-sm text-muted-foreground">Kenotron, pravidelné revízie, MPP, BPP, osvedčenia.</p>
-                  </div>
-                </button>
-              }
-              title="Revízie, inšpekčné merania a osvedčenia"
-              image={revizie}
-              description="Zabezpečíme všetky merania a revízie, ktoré vyžaduje zákon. Predídete pokutám aj výpadkom a budete mať vždy aktuálnu dokumentáciu na vyžiadanie."
-              benefits={[
-                "Kenotrónové merania VN strany",
-                "Pravidelné revízie NN/VN nad 1000 V",
-                "MPP — miestny prevádzkový predpis",
-                "BPP — bezpečnostné pracovné postupy",
-                "Osvedčenia bezpečnej prevádzky",
-              ]}
-            />
+            <div className="flex flex-col gap-3">
+              <ServiceDialog
+                trigger={
+                  <button className="group text-left rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all hover:-translate-y-1 bg-card border border-border/60 w-full">
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={revizie}
+                        alt="Revízie a kenotrónové merania NN/VN"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-5">
+                      <h2 className="font-display text-xl font-bold text-primary mb-2">Revízie a merania NN/VN</h2>
+                      <p className="text-sm text-muted-foreground">
+                        Kenotrónové merania VN káblov, pravidelné revízie transformátorov, MPP, BPP a osvedčenia.
+                      </p>
+                    </div>
+                  </button>
+                }
+                title="Revízie, inšpekčné merania a osvedčenia"
+                image={revizie}
+                description="Zabezpečíme všetky merania a revízie, ktoré vyžaduje zákon. Predídete pokutám aj výpadkom a budete mať vždy aktuálnu dokumentáciu na vyžiadanie."
+                benefits={[
+                  "Kenotrónové merania VN strany",
+                  "Pravidelné revízie NN/VN nad 1000 V",
+                  "MPP — miestny prevádzkový predpis",
+                  "BPP — bezpečnostné pracovné postupy",
+                  "Osvedčenia bezpečnej prevádzky",
+                ]}
+              />
+              <Link
+                to="/sluzby"
+                className="inline-flex items-center gap-1 text-accent font-semibold text-sm hover:underline"
+              >
+                Zistiť viac o revíziách transformátorov <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
 
           <div className="text-center mt-10">
