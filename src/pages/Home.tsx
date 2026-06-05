@@ -61,6 +61,8 @@ const Home = () => {
             className="w-full h-full object-cover"
             width={1920}
             height={1280}
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-hero" />
         </div>
