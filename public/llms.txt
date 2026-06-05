@@ -1,0 +1,33 @@
+# TRAFON
+
+> Trafostanice na kľúč, predaj transformátorov, revízie VN/NN, kenotrónové merania a servis. Bratislava, Nitra, celé Slovensko. Súčasť skupiny Foton Energy s.r.o.
+
+TRAFON je značka spoločnosti Foton Energy s.r.o. zameraná na komplexnú dodávku trafostaníc a transformátorov pre priemysel, developerov a fotovoltické inštalácie. Poskytujeme projektovanie, výstavbu, revízie VN/NN, kenotrónovanie káblov a 6-ročný servis v hodnote 8 590 € zdarma.
+
+## Pages
+
+- [Domov](/): Prehľad služieb, referencie a kontakt.
+- [Trafostanice na kľúč](/trafostanice): Projektovanie, dodávka a montáž trafostaníc.
+- [Revízie VN/NN](/revizie-vn-nn): Odborné revízie vysokého a nízkeho napätia, §22/§23/§24.
+- [Kenotrónovanie](/kenotropovanie): Napäťová skúška a meranie VN káblov metódou VLF.
+- [Predaj transformátorov](/transformatory): Suché a olejové distribučné transformátory.
+- [Trafostanice Nitra](/trafostanice-nitra): Služby v Nitrianskom kraji.
+- [Trafostanice Bratislava](/trafostanice-bratislava): Služby v Bratislavskom kraji.
+- [Služby](/sluzby): Kompletný prehľad služieb.
+- [Referencie](/referencie): Realizované projekty.
+- [Oprávnenia](/opravnenia): Certifikáty a oprávnenia.
+- [O nás](/o-nas): Príbeh a tím Foton Energy.
+- [Kontakt](/kontakt): Telefón, email a kontaktný formulár.
+
+## Blog
+
+- [Blog](/blog): Odborné články o trafostaniciach, transformátoroch a revíziách.
+- [Cena trafostanice](/blog/cena-trafostanice): Z čoho sa skladá cena trafostanice.
+- [Trafostanica pre fotovoltaiku](/blog/trafostanica-pre-fotovoltaiku): Dimenzovanie pre FVE.
+- [Kenotrónové meranie VN káblov](/blog/kenotronove-meranie-vn-kablov): Ako prebieha meranie.
+- [Revízia trafostanice — ako často](/blog/revizia-trafostanice-ako-casto): Lehoty revízií podľa noriem.
+- [Výstavba trafostanice krok za krokom](/blog/vystavba-trafostanice-kluc-krok-za-krokom): Postup od projektu po kolaudáciu.
+- [Suchý vs olejový transformátor](/blog/suchy-vs-olejovy-transformator): Porovnanie typov.
+- [Povolenia pre trafostanicu na Slovensku](/blog/povolenia-trafostanica-slovensko): Legislatíva a dokumentácia.
+- [Chyby pri výbere dodávateľa trafostanice](/blog/chyby-pri-vybere-dodavatela-trafostanice): Na čo si dať pozor.
+- [Trafostanica pre priemyselný park / developera](/blog/trafostanica-priemyselny-park-developer): Riešenia pre developerov.
