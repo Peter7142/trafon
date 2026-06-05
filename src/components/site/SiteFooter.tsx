@@ -26,7 +26,7 @@ export const SiteFooter = () => {
               <Mail className="h-4 w-4 text-accent" />
               <a href="mailto:info@fotonenergy.sk" className="hover:text-accent">info@fotonenergy.sk</a>
             </li>
-            <li className="text-primary-foreground/60 text-xs pt-1">IČO: 53 366 280</li>
+            <li className="text-primary-foreground/85 text-xs pt-1">IČO: 53 366 280</li>
           </ul>
         </div>
 
@@ -74,7 +74,7 @@ export const SiteFooter = () => {
       </div>
 
       <div className="border-t border-primary-foreground/10">
-        <div className="container-page py-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-primary-foreground/60">
+        <div className="container-page py-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-primary-foreground/85">
           <div>© {new Date().getFullYear()} Foton Energy s.r.o. | trafon.sk</div>
           <a
             href="https://fotonenergy.sk"

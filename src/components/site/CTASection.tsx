@@ -40,7 +40,7 @@ export const CTASection = ({
               <a href="tel:+421944366444">Zavolajte +421 944 366 444</a>
             </Button>
           </div>
-          <p className="text-sm text-primary-foreground/60 mt-5">
+          <p className="text-sm text-primary-foreground/85 mt-5">
             Bez záväzku • Bez stresu • Odpovedáme do 24 hodín
           </p>
         </div>
