@@ -11,11 +11,11 @@ interface SEOHeadProps {
 export const SEOHead = ({ 
   title, 
   description, 
-  keywords = 'events, discover events, event management, community events',
+  keywords = 'trafostanice, transformátory, revízie VN/NN, kenotrónovanie, TRAFON',
   image = '/placeholder.svg',
   url = window.location.href
 }: SEOHeadProps) => {
-  const fullTitle = `${title} | EventHub`;
+  const fullTitle = `${title} | TRAFON`;
   
   return (
     <Helmet>

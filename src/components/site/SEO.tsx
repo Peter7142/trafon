@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 export const SEO = ({ title, description, path, keywords, jsonLd }: SEOProps) => {
-  const fullTitle = `${title} | TRAFON — Foton Energy`;
+  const fullTitle = `${title} | TRAFON`;
   return (
     <Helmet>
       <html lang="sk" />
