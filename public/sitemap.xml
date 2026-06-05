@@ -2,19 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.trafon.sk/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://www.trafon.sk/trafostanice</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.trafon.sk/sluzby</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.trafon.sk/revizie-vn-nn</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.trafon.sk/kenotropovanie</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.trafon.sk/transformatory</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.trafon.sk/trafostanice-nitra</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.trafon.sk/trafostanice-bratislava</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.trafon.sk/sluzby</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.trafon.sk/referencie</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.trafon.sk/opravnenia</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.trafon.sk/o-nas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.trafon.sk/kontakt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.trafon.sk/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/cena-trafostanice</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/trafostanica-pre-fotovoltaiku</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/kenotronove-meranie-vn-kablov</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/revizia-trafostanice-ako-casto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/vystavba-trafostanice-kluc-krok-za-krokom</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/suchy-vs-olejovy-transformator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/povolenia-trafostanica-slovensko</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/chyby-pri-vybere-dodavatela-trafostanice</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.trafon.sk/blog/trafostanica-priemyselny-park-developer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.trafon.sk/blog/cena-trafostanice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/trafostanica-pre-fotovoltaiku</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/kenotronove-meranie-vn-kablov</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/revizia-trafostanice-ako-casto</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/vystavba-trafostanice-kluc-krok-za-krokom</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/suchy-vs-olejovy-transformator</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/povolenia-trafostanica-slovensko</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/chyby-pri-vybere-dodavatela-trafostanice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.trafon.sk/blog/trafostanica-priemyselny-park-developer</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

@@ -617,6 +617,30 @@ const Home = () => {
         </div>
       </section>
 
+      {/* SEKCIA H — Prepojenie s fotonenergy.sk */}
+      <section className="py-20 bg-secondary/40">
+        <div className="container-page max-w-4xl text-center">
+          <span className="text-accent font-semibold text-sm uppercase tracking-widest">Ekosystém Foton Energy</span>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">
+            Potrebujete fotovoltiku alebo elektroinštalácie?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <strong>Foton Energy</strong> — rovnaká firma, komplexné elektro služby pre váš objekt. Od strešnej
+            fotovoltickej elektrárne až po batériové úložiská a kompletné elektroinštalácie.
+          </p>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+          >
+            <a href="https://fotonenergy.sk" target="_blank" rel="noopener noreferrer">
+              Navštíviť fotonenergy.sk <ArrowRight className="ml-1 h-5 w-5" />
+            </a>
+          </Button>
+        </div>
+      </section>
+
       <CTASection />
     </>
   );

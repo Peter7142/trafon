@@ -12,6 +12,11 @@ import ONas from "./pages/ONas";
 import Kontakt from "./pages/Kontakt";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import RevizieVnNn from "./pages/RevizieVnNn";
+import Kenotronovanie from "./pages/Kenotronovanie";
+import Transformatory from "./pages/Transformatory";
+import TrafostaniceNitra from "./pages/TrafostaniceNitra";
+import TrafostaniceBratislava from "./pages/TrafostaniceBratislava";
 import NotFound from "./pages/NotFound";
 
 const App = () => (
@@ -22,6 +27,11 @@ const App = () => (
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/trafostanice" element={<Trafostanice />} />
+        <Route path="/revizie-vn-nn" element={<RevizieVnNn />} />
+        <Route path="/kenotropovanie" element={<Kenotronovanie />} />
+        <Route path="/transformatory" element={<Transformatory />} />
+        <Route path="/trafostanice-nitra" element={<TrafostaniceNitra />} />
+        <Route path="/trafostanice-bratislava" element={<TrafostaniceBratislava />} />
         <Route path="/sluzby" element={<Sluzby />} />
         <Route path="/referencie" element={<Referencie />} />
         <Route path="/opravnenia" element={<Opravnenia />} />
