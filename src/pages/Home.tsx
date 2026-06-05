@@ -604,28 +604,7 @@ const Home = () => {
             </h2>
           </div>
           <Accordion type="single" collapsible className="w-full">
-            {[
-              {
-                q: "Čo je trafostanica na kľúč?",
-                a: "Trafostanica na kľúč je kompletná realizácia od projektu cez dodávku, montáž až po odovzdanie hotovej trafostanice. Zákazník sa nestará o nič — TRAFON vybavuje všetky povolenia, komunikáciu s distribútorom (SSD, ZSD, VSD) aj revízie.",
-              },
-              {
-                q: "Koľko stojí trafostanica na Slovensku?",
-                a: "Cena trafostanice závisí od výkonu transformátora, typu skeletu a lokality. Orientačne od 30 000 € za jednoduchú kioskovú trafostanicu až po 150 000+ € pri väčších projektoch. Kontaktujte TRAFON pre bezplatnú cenovú ponuku.",
-              },
-              {
-                q: "Čo je kenotrónové meranie VN káblov?",
-                a: "Kenotrónové meranie je skúška integrity VN káblov pomocou vysokého napätia (VLF metóda). Odhaľuje poruchy izolácie skôr než spôsobia výpadok. Povinné pri uvedení novej trafostanice do prevádzky a pri periodických revíziách podľa STN noriem.",
-              },
-              {
-                q: "Ako často treba revíziu trafostanice?",
-                a: "Podľa STN 33 1500 je povinná revízia trafostanice raz za 4 roky (vonkajšie prostredie) alebo raz za 5 rokov (vnútorné prostredie). Ročná vizuálna prehliadka je odporúčaná. TRAFON ponúka 6-ročný servisný balík ZDARMA v hodnote 8 590 €.",
-              },
-              {
-                q: "Kde pôsobí TRAFON — Foton Energy?",
-                a: "TRAFON realizuje trafostanice a transformátory na celom Slovensku. Hlavné centrá sú Bratislava a Nitra. Vyjazďame do celej SR bez príplatku za dopravu v rámci projektovej ceny.",
-              },
-            ].map((f, i) => (
+            {HOME_FAQS.map((f, i) => (
               <AccordionItem key={i} value={`item-${i}`}>
                 <AccordionTrigger className="text-left font-display text-lg font-bold text-primary">
                   {f.q}
