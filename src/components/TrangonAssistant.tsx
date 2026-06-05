@@ -300,7 +300,12 @@ export const TrangonAssistant = () => {
               }}
               className="flex items-end gap-2"
             >
+              <label htmlFor="trafon-assistant-input" className="sr-only">
+                Správa pre asistenta
+              </label>
               <textarea
+                id="trafon-assistant-input"
+                aria-label="Správa pre asistenta"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => {
