@@ -706,6 +706,132 @@ export const blogPosts: BlogPostFull[] = [
       </>
     ),
   },
+  {
+    slug: "vzdialenost-trafostanice-od-domu",
+    title: "Vzdialenosť trafostanice od domu — normy, EMF a zdravie",
+    description:
+      "Aká je minimálna vzdialenosť trafostanice od rodinného domu? STN normy, ochranné pásma, hodnoty elektromagnetického poľa (EMF) a fakty pre majiteľov nehnuteľností a developerov.",
+    excerpt:
+      "Minimálne vzdialenosti trafostanice od obytných budov podľa STN, ochranné pásma VN vedení a reálne hodnoty elektromagnetického poľa (EMF). Bez mýtov, s číslami.",
+    date: "2024-10-02",
+    readTime: "7 minút",
+    category: "Normy a bezpečnosť",
+    keywords:
+      "vzdialenosť trafostanice od domu, ochranné pásmo trafostanice, trafostanica EMF, trafostanica pri rodinnom dome, STN trafostanica",
+    render: () => (
+      <>
+        <p className="lead">
+          „Postavili nám trafostanicu 8 metrov od plota — je to legálne? A nebude nám škodiť?" Toto je jedna z
+          najčastejších otázok, ktoré dostávame od majiteľov nehnuteľností aj developerov. Odpoveď nie je „závisí" —
+          existujú konkrétne normy, vzdialenosti a merateľné hodnoty.
+        </p>
+
+        <h2>Aká je minimálna vzdialenosť trafostanice od obytnej budovy?</h2>
+        <p>
+          Slovenská legislatíva (zákon č. 251/2012 Z. z. o energetike) ani STN normy nestanovujú jednu pevnú
+          „minimálnu vzdialenosť trafostanice od domu" v metroch. Vzdialenosť sa odvíja od:
+        </p>
+        <ul>
+          <li>typu trafostanice (kiosková, stožiarová, murovaná)</li>
+          <li>napäťovej úrovne pripojenia (22 kV / 35 kV)</li>
+          <li>ochranného pásma VN vedenia, ktoré k nej vedie</li>
+          <li>požiarnej odolnosti konštrukcie a vzdialenosti od horľavých stavieb (STN 92 0201)</li>
+        </ul>
+
+        <h2>Ochranné pásma podľa zákona č. 251/2012 Z. z.</h2>
+        <Table
+          headers={["Zariadenie", "Ochranné pásmo (od krajného vodiča / steny)", "Poznámka"]}
+          rows={[
+            ["Vonkajšie VN vedenie 1 – 35 kV (vodiče bez izolácie)", "10 m", "§ 43 ods. 2 písm. a)"],
+            ["Vonkajšie VN vedenie 1 – 35 kV (izolované vodiče)", "4 m", "§ 43 ods. 2 písm. b)"],
+            ["Vonkajšie VN vedenie 35 – 110 kV", "15 m", "§ 43 ods. 2 písm. c)"],
+            ["Stožiarová / kiosková trafostanica VN/NN", "10 m od konštrukcie", "§ 43 ods. 7"],
+            ["Murovaná trafostanica vo vlastnom objekte", "Bez vonkajšieho OP", "Riadi sa STN 33 3201"],
+          ]}
+        />
+        <p>
+          V ochrannom pásme je zakázané umiestňovať stavby určené na bývanie. Kiosková trafostanica preto v praxi
+          nesmie byť bližšie ako <strong>10 metrov</strong> od steny rodinného domu — a to platí pre umiestňovanie
+          novej trafostanice aj pre novú výstavbu pri existujúcej trafostanici.
+        </p>
+
+        <h2>Trafostanica a požiarna bezpečnosť (STN 92 0201)</h2>
+        <p>
+          Okrem energetického ochranného pásma platí aj požiarna norma. Odstupová vzdialenosť medzi trafostanicou
+          (najmä olejovou) a najbližšou horľavou stavbou závisí od požiarnej odolnosti steny:
+        </p>
+        <ul>
+          <li>Murovaná trafostanica s REI 60 — typicky 5 m od horľavej steny susedného objektu</li>
+          <li>Olejový transformátor &gt; 1 000 l oleja — vyžaduje záchytnú jímku a väčšie odstupy</li>
+          <li>Suchý transformátor — bez požiadavky na záchyt oleja, menšie nároky na priestor</li>
+        </ul>
+
+        <h2>Elektromagnetické pole (EMF) — čo hovoria namerané hodnoty</h2>
+        <p>
+          Najčastejšia obava: „Bude nám trafostanica vyžarovať škodlivé žiarenie?" Trafostanica VN/NN pracuje na
+          frekvencii 50 Hz (extrémne nízka frekvencia, ELF). Limity stanovuje{" "}
+          <strong>vyhláška MZ SR č. 534/2007 Z. z.</strong> a odporúčania ICNIRP 2010:
+        </p>
+        <Table
+          headers={["Veličina", "Referenčná hodnota (ICNIRP, obyv.)", "Typická hodnota 5 m od kioskovej TS"]}
+          rows={[
+            ["Magnetická indukcia B (50 Hz)", "200 µT", "0,5 – 5 µT"],
+            ["Elektrické pole E (50 Hz)", "5 000 V/m", "10 – 50 V/m"],
+          ]}
+        />
+        <p>
+          Inak povedané: namerané hodnoty 5 metrov od bežnej kioskovej trafostanice sú{" "}
+          <strong>40 až 400-krát nižšie</strong> ako odporúčaný limit pre nepretržitý pobyt obyvateľstva. Pre porovnanie
+          — bežná fénka pri vlasoch vystavuje používateľa hodnote 10 – 50 µT, indukčná varná doska 1 – 10 µT.
+        </p>
+
+        <h2>Čo robiť, ak chce niekto postaviť trafostanicu blízko vášho domu</h2>
+        <ol>
+          <li>
+            <strong>Vyžiadajte si projektovú dokumentáciu</strong> — má v nej byť zákres ochranného pásma a doklad o
+            jeho dodržaní.
+          </li>
+          <li>
+            <strong>Skontrolujte stavebné konanie</strong> — ako účastník (vlastník susednej parcely) máte právo
+            podávať pripomienky.
+          </li>
+          <li>
+            <strong>Žiadajte meranie EMF po uvedení do prevádzky</strong> — akreditované laboratórium vystaví
+            protokol, ktorý je nezvratný dôkaz.
+          </li>
+          <li>
+            <strong>Suchý transformátor namiesto olejového</strong> — pri citlivých lokalitách (škola, materská
+            škola, byty) je to štandardné riešenie.
+          </li>
+        </ol>
+
+        <h2>Najčastejšie mýty</h2>
+        <ul>
+          <li>
+            <em>„Trafostanica zvyšuje riziko rakoviny."</em> — WHO (IARC) klasifikuje ELF magnetické pole ako 2B
+            (možno karcinogénne) pri dlhodobej expozícii nad 0,3 – 0,4 µT priemerne. Hodnoty v obytných miestnostiach
+            10 m od trafostanice sú spravidla pod touto hranicou.
+          </li>
+          <li>
+            <em>„Znižuje hodnotu nehnuteľnosti."</em> — Realitné štatistiky ukazujú vplyv najmä pri stožiarových TS
+            priamo v pohľade z okna. Kiosková TS skrytá za plotom má vplyv minimálny.
+          </li>
+          <li>
+            <em>„Hučí a obťažuje hlukom."</em> — Moderné suché transformátory pracujú pod 55 dB(A) na 1 m, vo
+            vzdialenosti 10 m je hluk pod hranicou bežného šumu pozadia.
+          </li>
+        </ul>
+
+        <h2>Potrebujete posúdiť konkrétnu situáciu?</h2>
+        <p>
+          TRAFON vie zhodnotiť projekt navrhovanej trafostanice z hľadiska noriem, EMF aj požiarnej bezpečnosti — či
+          už ako investor, alebo dotknutý vlastník susednej nehnuteľnosti. Pošlite nám projekt a do 48 hodín máte
+          odbornú analýzu s odkazmi na konkrétne paragrafy a STN.
+        </p>
+      </>
+    ),
+  },
 ];
+
 
 export const blogPostMetas: BlogPostMeta[] = blogPosts.map(({ render, ...meta }) => meta);
