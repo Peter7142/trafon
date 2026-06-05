@@ -31,3 +31,4 @@ TRAFON je značka spoločnosti Foton Energy s.r.o. zameraná na komplexnú dodá
 - [Povolenia pre trafostanicu na Slovensku](/blog/povolenia-trafostanica-slovensko): Legislatíva a dokumentácia.
 - [Chyby pri výbere dodávateľa trafostanice](/blog/chyby-pri-vybere-dodavatela-trafostanice): Na čo si dať pozor.
 - [Trafostanica pre priemyselný park / developera](/blog/trafostanica-priemyselny-park-developer): Riešenia pre developerov.
+- [Vzdialenosť trafostanice od domu](/blog/vzdialenost-trafostanice-od-domu): Normy, ochranné pásma a EMF.
